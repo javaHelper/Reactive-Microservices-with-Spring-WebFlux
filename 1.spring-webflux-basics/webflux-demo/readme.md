@@ -65,3 +65,23 @@ POST ->
     "first" : 5,
     "second": 5
 }'```
+
+----------
+- Exception Checking
+
+GET -> `http://localhost:8080/reactive-math/square/8/throw`
+
+       `http://localhost:8080/reactive-math/square/12/throw`
+       
+       
+GET -> `http://localhost:8080/reactive-math/square/8/mono-error`
+
+       `http://localhost:8080/reactive-math/square/12/mono-error`
+       
+GET -> `http://localhost:8080/reactive-math/square/8/assignment`
+
+       `http://localhost:8080/reactive-math/square/12/assignment`  
+
+
+
+
