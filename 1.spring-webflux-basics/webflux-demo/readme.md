@@ -50,3 +50,18 @@ Response:
     }
 ]
 ```
+
+GET -> `http://localhost:8080/reactive-math/square/7`
+
+GET -> `http://localhost:8080/reactive-math/table/7`
+
+GET -> `http://localhost:8080/reactive-math/table/7/stream`
+
+POST -> 
+```curl --location --request POST 'http://localhost:8080/reactive-math/multiply' \
+--header 'some-key: some-value' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "first" : 5,
+    "second": 5
+}'```
