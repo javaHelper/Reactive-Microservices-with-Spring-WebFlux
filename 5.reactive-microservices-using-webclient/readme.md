@@ -76,4 +76,15 @@ curl --location --request POST 'http://localhost:8092/user/transaction' \
 --------
 
 
+# Order Service 
 
+- Create Order
+
+```sh
+curl --location --request POST 'http://localhost:8080/order' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "productId": "62d8d3ca2373b47b312d31b9",
+    "userId": 4
+}'
+```
